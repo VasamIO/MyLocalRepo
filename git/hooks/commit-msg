@@ -1,6 +1,0 @@
-#!/bin/sh
-# commit message has to start with a valiad issue number ex: #3945 your commit message here!
-test "" = "$(head -1 "$1" | grep -vE '^((fixup\!|squash\!) )?(#[0-9]+).+' )" || {
-  echo >&2 'Please enter a valiad issue number ex: #3945 your commit message here!'
-  exit 1
-}
